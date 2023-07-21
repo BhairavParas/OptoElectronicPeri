@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Analog Devices/CrossCore Embedded Studio 2.11.1/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Thu Jul 20 16:25:45 2023
+'>
+<MSG id='008B46C8' mid='li1050' type='Error' >
+<TEXT><![CDATA['_encAZL' ('encAZL'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     'src\ENCODER_trial.doj'
+        Attempted redefinition: 'src\ENC_api.doj']]></TEXT>
+</MSG>
+<MSG id='02F19A78' mid='li1050' type='Error' >
+<TEXT><![CDATA['_encAZH' ('encAZH'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     'src\ENCODER_trial.doj'
+        Attempted redefinition: 'src\ENC_api.doj']]></TEXT>
+</MSG>
+<MSG id='02F19CD0' mid='li1050' type='Error' >
+<TEXT><![CDATA['_encELL' ('encELL'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     'src\ENCODER_trial.doj'
+        Attempted redefinition: 'src\ENC_api.doj']]></TEXT>
+</MSG>
+<MSG id='02F19E90' mid='li1050' type='Error' >
+<TEXT><![CDATA['_encELH' ('encELH'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     'src\ENCODER_trial.doj'
+        Attempted redefinition: 'src\ENC_api.doj']]></TEXT>
+</MSG>
+<MSG id='02F163D0' mid='li1050' type='Error' >
+<TEXT><![CDATA['_encAZOutL' ('encAZOutL'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     'src\ENCODER_trial.doj'
+        Attempted redefinition: 'src\ENC_api.doj']]></TEXT>
+</MSG>
+<MSG id='02F16830' mid='li1050' type='Error' >
+<TEXT><![CDATA['_encAZOutH' ('encAZOutH'): Multiply defined symbol in processor 'p0'.
+        Initial definition:     'src\ENCODER_trial.doj'
+        Attempted redefinition: 'src\ENC_api.doj']]></TEXT>
+</MSG>
+</DOCUMENT>
