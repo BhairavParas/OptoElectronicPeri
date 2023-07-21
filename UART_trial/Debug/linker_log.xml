@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Analog Devices/CrossCore Embedded Studio 2.11.1/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Thu Jul 20 11:51:01 2023
+'>
+<MSG id='03AFCEF8' mid='li1021' type='Error' >
+<TEXT><![CDATA[The following symbols referenced in processor 'p0' could not be resolved:
+        'ReadData_Sport [_ReadData_Sport]' referenced from 'src\UART_trial.doj']]></TEXT>
+</MSG>
+</DOCUMENT>
