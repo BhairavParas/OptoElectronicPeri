@@ -42,7 +42,7 @@ void Init_HW(void)
 /*******************************************/
 
 /*****Configure parallel port interface*****/
-//	Init_ParallelPort();
+	Init_ParallelPort();
 /*******************************************/
 
 /*****Configure serial UART interfaces*****/
@@ -338,13 +338,13 @@ static void Init_Interrupts(void)
 
   sysreg_bit_set(sysreg_MODE1,IRPTEN);
 }
-
+#endif
 static void Init_ParallelPort(void)
 {
 	*pAMICTL0 = 0x00289FCD;
 	*pEPCTL &= ~(B0SD |B1SD | B2SD);
 }
-
+#if 0
 static void Init_Timer()
 {
 	*pTM0CTL=0x00;
