@@ -1,5 +1,4 @@
 #include "ADC_api.h"
-
 #include "StdSharc.h"
 
 int AdcData[8]={0};

@@ -9,7 +9,7 @@
 //#include "dac.h"
 //#include "flash.h"
 #include "sync_sport.h"
-//#include "spi.h"
+//#include "SPI_api.h"
 //#include "fsm.h"
 //#include "debug.h"
 #include <services/int/adi_int.h>

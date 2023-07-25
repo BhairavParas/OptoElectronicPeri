@@ -85,21 +85,21 @@ CPP_DEPS := $(subst \ ,@, $(CPP_DEPS))
 CPP_DEPS := $(foreach var, $(CPP_DEPS), "$(subst @, ,$(var))")
 
 # All Target
-all: ENCODER_trial.dxe
+all: GCIE_ENCODER_trial.dxe
 
 # Tool invocations
-ENCODER_trial.dxe: $(LDF_SRCS) $(SRC_OBJS)
+GCIE_ENCODER_trial.dxe: $(LDF_SRCS) $(SRC_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: CrossCore SHARC Linker'
-	cc21k -proc ADSP-21369 -si-revision 0.2 -T C:/Users/Lenovo/cces/2.11.1/ENCODER_trial/system/startup_ldf/app.ldf -no-mem -L C:/Users/Lenovo/cces/2.11.1/ENCODER_trial/Debug/system/startup_ldf -flags-link -MDCORE0,-MDDEBUG -add-debug-libpaths -o ENCODER_trial.dxe @input-file.txt
+	cc21k -proc ADSP-21369 -si-revision 0.2 -T C:/Users/Lenovo/git/repository/ENCODER_trial/system/startup_ldf/app.ldf -no-mem -L C:/Users/Lenovo/git/repository/ENCODER_trial/Debug/system/startup_ldf -flags-link -MDCORE0,-MDDEBUG -add-debug-libpaths -o GCIE_ENCODER_trial.dxe @input-file.txt
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-linker_log.xml: ENCODER_trial.dxe $(LDF_SRCS) $(SRC_OBJS)
+linker_log.xml: GCIE_ENCODER_trial.dxe $(LDF_SRCS) $(SRC_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(DXE) $(DSP_DEPS) $(CC_DEPS) $(LINKER_LOG_OUTPUTS) $(C++_DEPS) $(OBJS) $(C_UPPER_DEPS) $(CXX_DEPS) $(ASM_DEPS) $(S_DEPS) $(C_DEPS) $(CPP_DEPS)  ENCODER_trial.dxe
+	-$(RM) $(DXE) $(DSP_DEPS) $(CC_DEPS) $(LINKER_LOG_OUTPUTS) $(C++_DEPS) $(OBJS) $(C_UPPER_DEPS) $(CXX_DEPS) $(ASM_DEPS) $(S_DEPS) $(C_DEPS) $(CPP_DEPS)  GCIE_ENCODER_trial.dxe
 	-@echo ' '
 
 .PHONY: all clean dependents

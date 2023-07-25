@@ -30,21 +30,21 @@ C_DEPS += \
 system/startup_ldf/app_IVT.doj: ../system/startup_ldf/app_IVT.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC Assembler'
-	easm21k -file-attr ProjectName="UART_trial" -proc ADSP-21369 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-529da9edd92cb03410aba02584ba3f5b.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "$@" "$<"
+	easm21k -file-attr ProjectName="GCIE_UART_trial" -proc ADSP-21369 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-529da9edd92cb03410aba02584ba3f5b.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 system/startup_ldf/app_heaptab.doj: ../system/startup_ldf/app_heaptab.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC C/C++ Compiler'
-	cc21k -c -file-attr ProjectName="UART_trial" -proc ADSP-21369 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-1855dd4341d0f2a28a10ea597448c89e.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "$@" "$<"
+	cc21k -c -file-attr ProjectName="GCIE_UART_trial" -proc ADSP-21369 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-1855dd4341d0f2a28a10ea597448c89e.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 system/startup_ldf/app_startup.doj: ../system/startup_ldf/app_startup.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC Assembler'
-	easm21k -file-attr ProjectName="UART_trial" -proc ADSP-21369 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-529da9edd92cb03410aba02584ba3f5b.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "$@" "$<"
+	easm21k -file-attr ProjectName="GCIE_UART_trial" -proc ADSP-21369 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-529da9edd92cb03410aba02584ba3f5b.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

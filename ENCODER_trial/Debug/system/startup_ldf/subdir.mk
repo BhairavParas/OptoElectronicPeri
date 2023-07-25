@@ -30,21 +30,21 @@ C_DEPS += \
 system/startup_ldf/app_IVT.doj: ../system/startup_ldf/app_IVT.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC Assembler'
-	easm21k -file-attr ProjectName="ENCODER_trial" -proc ADSP-21369 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-0a7a36613de768ddf8713c78cc6eb0cd.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "$@" "$<"
+	easm21k -file-attr ProjectName="GCIE_ENCODER_trial" -proc ADSP-21369 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-3689be88a4e220529bf3e47cb45375fd.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 system/startup_ldf/app_heaptab.doj: ../system/startup_ldf/app_heaptab.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC C/C++ Compiler'
-	cc21k -c -file-attr ProjectName="ENCODER_trial" -proc ADSP-21369 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-8c53e7d0acbaae87bf8dbd28e37d724a.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "$@" "$<"
+	cc21k -c -file-attr ProjectName="GCIE_ENCODER_trial" -proc ADSP-21369 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-6fe7524d7e139d54bf98f9d21bf88f62.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 system/startup_ldf/app_startup.doj: ../system/startup_ldf/app_startup.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: CrossCore SHARC Assembler'
-	easm21k -file-attr ProjectName="ENCODER_trial" -proc ADSP-21369 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-0a7a36613de768ddf8713c78cc6eb0cd.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "$@" "$<"
+	easm21k -file-attr ProjectName="GCIE_ENCODER_trial" -proc ADSP-21369 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-3689be88a4e220529bf3e47cb45375fd.txt -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

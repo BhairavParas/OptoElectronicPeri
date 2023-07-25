@@ -34,3 +34,4 @@ src/UART_trial.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studi
 src/UART_trial.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.11.1/SHARC/include/builtins.h
 src/UART_trial.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.11.1/SHARC/include/sys/builtins_support.h
 src/UART_trial.doj: ../../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.11.1/SHARC/include/string.h
+src/UART_trial.doj: ../src/INIT_api.h

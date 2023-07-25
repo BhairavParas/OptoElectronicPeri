@@ -1,3 +1,4 @@
+"src/INIT_api.doj"
 "src/UART_trial.doj"
 "src/uart_api.doj"
 "system/adi_initialize.doj"
